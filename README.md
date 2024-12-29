@@ -4,7 +4,7 @@ Each folder contains scripts to `load` the SVs into an RDS and (if applicable) `
 
 ### tumour_replicates
 
-Comparison between split tumour bams (_in-silico_ replicates). VCFs have been labelled with their replicate calls using `savana evaluate` functionality, allowing a 100bp overlap (INFO column =SOMATIC/NOT_IN_COMPARISON).
+Comparison between split tumour bams (_in-silico_ replicates). VCFs have been labelled with their replicate calls using `savana evaluate` functionality, allowing a 100bp overlap (INFO column LABEL=SOMATIC/NOT_IN_COMPARISON).
 
 * `load_tumour_replicates.R` -> saves data from all callers into `rds/SVs_tumour_splits_svs.rds`
 
@@ -25,5 +25,5 @@ Comparison between srWGS (GRIDSS) and lrWGS from all algorithms
 
 Comparison between split normal bams (replicates) from all callers
 
-* load_normal_replicates.R -> loads and saves labelled VCFs from all callers (INFO column =SOMATIC/NOT_IN_COMPARISON) into `rds/SVs_normal_splits_svs.rds`
+* load_normal_replicates.R -> loads and saves labelled VCFs from all callers (INFO column LABEL=SOMATIC/NOT_IN_COMPARISON) into `rds/SVs_normal_splits_svs.rds`
 
